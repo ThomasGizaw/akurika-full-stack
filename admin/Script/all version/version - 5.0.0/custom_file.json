@@ -1,0 +1,23 @@
+{
+    "custom": [{
+        "filename": "composer.json",
+        "path": "root"
+    }, {
+        "filename": "composer.lock",
+        "path": "root"
+    }, {
+        "filename": "package.json",
+        "path": "root"
+    }, {
+        "filename": "package-lock.json",
+        "path": "root"
+    },{
+        "filename": "server.php",
+        "path": "root"
+    },{
+        "filename": "webpack.mix.js",
+        "path": "root"
+    }
+],
+    "version": "3.0.0"
+}

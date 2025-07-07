@@ -1,0 +1,466 @@
+
+Date 30-11-2024 : Version 5.0.1
+------------------------------------
+Update logs - (Frontend):
+- Redux Store deprecation Issue Fixed.
+- Styling Fixed
+- Code refactoring
+
+
+Date 29-10-2024 : Version 5.0.0
+------------------------------------
+Update logs - (Frontend):
+- Introduce New documentation 
+- Google Map Feature added
+- Update some currency bugs
+- styling Fixed
+- Code Optimized
+
+Update logs - (Backend):
+- Integration with Google Maps.
+- Enable and disable Google Maps.
+- Dynamic Google Maps API key.
+- Live tracking of orders for delivery personnel.
+- View order location in order details.
+- Update seller location.
+- Update admin location.
+- Set per km shipping rate in Google Maps.
+- Update if Google Maps enable/disable in multi-seller order system.
+- Update order process.
+
+Update logs - (Mobile App):
+- Design modified.
+- Google map added.
+- Multi-currencies added.
+- User can choose location wise shipping charges or distance wise shipping charges.
+- User now can track order in real time.
+- Flutter dependencies/packages updated.
+- Compatible for flutter 3.0.0 or later.
+- Code optimization.
+
+Date 12-09-2024 : Version 4.2.4
+------------------------------------
+Update logs - (Frontend):
+- Phone Number validation Issue Fixed
+- OTP Issue fixed
+- styling Fixed
+- Code Optimized
+
+Date 05–09-2024 : Version 4.2.3
+------------------------------------
+Update logs - (Mobile App):
+- Social login (google) added.
+- Pagination added for popular, top rated, features, best and new arrival products.
+- Internet connectivity checker added.
+- Multi-currency added.
+- Animated scrolling added for order page.
+- Pull to refresh added.
+- Dependencies / packages updated.
+- Flutter SDK version updated.
+- Compatible for flutter 3.0.0 or later.
+- Material text theme updated.
+- Design issue fixed / modified.
+- Filter product drawer modified with functionality.
+- Code optimization.
+
+Date 05-06-2024 : Version 4.2.2
+------------------------------------
+Update logs - (Frontend):
+- Search Issue Fixed
+- Drawer main menu Issue Fixed
+- styling Fixed
+- Code Optimized
+
+
+Date 05-06-2024 : Version 4.2.0
+------------------------------------
+Update logs - (Backend):
+- Payment method issue fixed
+- Currency issue fixed
+- Admin panel css issue fixed
+- Seller panel css issue fixed
+- Admin panel logo issue fixed
+- Seller panel logo issue fixed
+- API optimized
+- Code Optimized
+
+
+Update logs - (Frontend):
+- Drawer multivendor issue fixed
+- Currency bug fixed
+- Update nextjs version 12.0.0 to 12.3.4
+- Signup with Number enable/disable bug fixed
+
+
+
+Date 10-02-2024 : Version 4.0.0
+------------------------------------
+Update logs - (Backend):
+- Multi-Currency Feature
+- Refactor Bugs
+- Code Optimized
+
+Update logs - (Frontend):
+- Multi-Currency Change feature
+- Code Refactoring
+- Updated Dependency Version
+- Cart Page variant Show
+- styling Fixed
+- Responsive Issue Fixed
+
+Update logs - (Flutter App Update):
+- Updated Dependency Version
+- Code Refactoring
+- Flash product show/hide dynamic
+- styling Fixed
+
+
+
+
+Date 26-11-2023 : Version 3.9.4
+------------------------------------
+Update - Backend/ADMIN
+- POS ( Point of Sales) System Added
+- Add new customers from POS
+- OTP for Add new customers from The POS
+- Add new Product From the POS
+- Order Status Change 
+- Invoice Editing
+- Bulk Order Status Change 
+- Add new Product from Invoice / Order Edit
+- Increases and Decrease Product Quantity from Invoice.
+
+
+
+
+
+Date 25-09-2023
+------------------------------------
+Update - Backend/ADMIN
+- Product Cart Issue Fixed
+- Shipping Rule with Weight Issue Fixed
+- Code Optimised.
+
+Update logs (FRONTEND) :
+- Data type issue Fixed
+- currency issue Fixed
+- Related Product Not Show Product Details Page issue Fixed
+- Shipping Charge Issue Fixed
+- styling Fixed
+
+
+
+
+Date 18-09-2023
+<b>User App</b>
+------------------------------------
+enable/disable handle from API
+sliderVisibilty
+popularCategoryVisibilty
+brandVisibility
+topRatedVisibility
+sellerVisibility
+featuredProductVisibility
+newArrivalProductVisibility
+bestProductVisibility
+
+
+
+Date 23-08-2023
+<b>Front End</b>
+- PWA support
+- RTL Design Fixing
+- Banner Enable/Disable Option
+- Dynamic Color Feature Resolutions
+- Code Fixing
+- Zip
+ 
+Note: We don't need to update the backend now. We fixed and added things based on Backend functionalities.
+
+
+
+
+Date 17-07-2023
+
+<b>backend:</b>
+
+- Payment issue fixed
+- Add to cart duplicate item issue fixed
+- Database auto update feature added
+
+<b>Frontend:</b>
+- Payment issue fixed
+- Product Variant Selection Issue.
+- Add to cart duplicate item issue fixed
+- Error Message issue fixed
+- Code Optimised.
+
+
+Date 18-06-2023
+<b>Overall:</b>
+
+- Theme color change option added
+- Seller new product create issue fixed
+- Awaiting product approved by admin issue fixed
+- Social login option added
+
+Date 12-03-2023
+<b>Overall:</b> 
+- MyFatoorah payment gateway added
+
+<b>Backend changes file: </b> 
+- app/Http/Controllers/User/CheckoutController.php
+- app/Http/Controllers/User/PaymentController.php
+- app/Http/Controllers/WEB/Admin/PaymentMethodController;
+
+- resources/views/admin/payment_method.blade.php
+- routes/web.php
+- routes/api.php
+
+<b>Backend new file: </b> 
+- app/Models/MyfatoorahPayment
+- config/myfatoorah.php
+- myfatoorah_payments.sql
+
+
+Date 07-03-2023
+
+<b>Overall:</b> 
+- User remove account option added
+
+<b>Backend changes files: </b> 
+- routes\api.php
+- app\Http\Controllers\User\UserProfileController.php
+
+
+
+
+
+Date 09-02-2023
+
+<b>Backend Changed Files:</b>
+app\Http\Controllers\Auth\LoginController.php
+
+<b>Flutter App Update:</b>
+Variant Product issue Fixed
+
+Date 26-01-2023
+
+
+<b>Overall:</b>
+- Product, country, state, city and shipping rule bulk import and Export
+- Live chat between seller and customer
+- Inventory system
+- Mobile phone sms otp(Twilio, Biztech)
+
+<b>Changed Files:</b>
+- .env
+- routes/api.php
+- routes/channels.php
+- routes/web.php
+- app/Models/City.php
+- app/Models/Country.php
+- app/Models/CountryState.php
+- app/Models/Product.php
+- app/Models/Shipping.php
+- app/Events/SellerToUser.php
+- app/Events/UserToSellerMessage.php
+- app/Http/Controllers/User/MessageController.php
+- app/Http/Controllers/WEB/Seller/SellerMessageContoller.php
+- app/Http/Controllers/Auth/LoginController.php
+- app/Http/Controllers/Auth/RegisterController.php
+- app/Http/Controllers/User/PaymentController.php
+- app/Http/Controllers/User/PaypalController.php
+- app/Http/Controllers/WEB/Admin/AdminProfileController.php
+- app/Http/Controllers/WEB/Admin/CityController.php
+- app/Http/Controllers/WEB/Admin/CountryController.php
+- app/Http/Controllers/WEB/Admin/CountryStateController.php
+- app/Http/Controllers/WEB/Admin/ProductController.php
+- app/Http/Controllers/WEB/Admin/SettingController.php
+- app/Http/Controllers/WEB/Admin/ShippingMethodController.php
+- app/Http/Controllers/WEB/Seller/SellerProductController.php
+- app/Http/Controllers/HomeController.php
+- public/backend/css/dev.css
+- resources/js/app.js
+- resources/js/bootstrap.js
+- config/app.php
+- app/Http/Middleware/Cors.php
+- resources/views/seller/chat_box.blade.php
+- resources/views/seller/chat_list.blade.php
+- resources/views/seller/footer.blade.php
+- resources/views/seller/header.blade.php
+- resources/views/seller/master_layout.blade.php
+- resources/views/seller/sidebar.blade.php
+- resources/views/admin/city.blade.php
+- resources/views/admin/country.blade.php
+- resources/views/admin/edit_shipping.blade.php
+- resources/views/admin/setting.blade.php
+- resources/views/admin/shipping_method.blade.php
+- resources/views/admin/sidebar.blade.php
+- resources/views/admin/state.blade.php
+- resources/views/admin/edit_product.blade.php
+- app/Providers/BroadcastServiceProvider.php
+- resources/lang/en/admin.php
+- resources/lang/en/user_validation.php
+- resources/lang/en/user.php
+
+<b>New Files:</b>
+- resources/js/components/Chat.js
+- resources/js/components/MainApp.js
+- resources/js/components/MessageBox.js
+- resources/js/components/MessageForm.js
+- resources/js/components/SingleCustomer.js
+- resources/js/contexts/Chat.js
+- app/Exports
+- app/Http/Controllers/WEB/Admin/NotificationController.php
+- app/Http/Controllers/WEB/Admin/InventoryController.php
+- app/Http/Controllers/WEB/Seller/InventoryController.php
+- app/Imports
+- app/Models/BiztechSms.php
+- app/Models/Inventory.php
+- app/Models/SmsTemplate.php
+- app/Models/TwilioSms.php
+- config/excel.php
+- twilio_sms.sql file 
+- sms_templates.sql file 
+- biztech_sms.sql file 
+- inventories.sql file 
+- resources/views/admin/city_import_page.blade.php
+- resources/views/admin/country_import_page.blade.php
+- resources/views/admin/country_state_import_page.blade.php
+- resources/views/admin/edit_sms_template.blade.php
+- resources/views/admin/product_import_page.blade.php
+- resources/views/admin/shipping_import_page.blade.php
+- resources/views/admin/sms_configuration.blade.php
+- resources/views/admin/sms_template.blade.php
+- resources/views/admin/inventory.blade.php
+- resources/views/admin/stock_history.blade.php
+- resources/views/seller/product_import_page.blade.php
+- resources/views/seller/inventory.blade.php
+- resources/views/seller/stock_history.blade.php
+
+
+Date: 25-12-2022
+
+Mobile App:
+1. edit address/edit profile bug fixed
+2. localisation feature added
+3. shipping methods bug fixed
+4. seller details page feature added
+5. payment enable disable option feature added
+6. maintenance mode feature added
+7. wish-list add/remove bug fixed
+
+Web App:
+1. Localisation
+2. Edit address selected area bug fixed
+3. shipping methods bug fixed
+4. Maintenance mode bug fixed
+5. Announcement bug fixed
+6. Custom page issue fixed
+
+Backend UPDATE:
+1. Maintenance mode bug fixed
+
+
+Date: 25-11-2022
+
+Localisation Feature Added for Multi-language support
+
+Note: Please replace your backend main files and Front-end with the latest file. But Don't do anything with your Database.
+
+
+Date: 16-11-2022
+
+Overall:
+- Product detail page, Blog detail page link added in the admin panel
+- Tawk live chat added
+- Cookie Consent added
+- Coupon minimum purchase price added
+- Footer about us content added
+- Empty cart page, wishlist page, seller application page image added
+- Announcement modal disable issue update
+- Product category image added
+- Homepage category section added
+
+
+New Files: 
+- resources\views\admin\image_content.blade.php
+
+ Changed Files: 
+- app/Http/Controllers/User/CheckoutController.php
+- app/Http/Controllers/WEB/Admin/BlogCommentController.php
+- app/Http/Controllers/WEB/Admin/BlogController.php
+- app/Http/Controllers/WEB/Admin/ContentController.php
+- app/Http/Controllers/WEB/Admin/CouponController.php
+- app/Http/Controllers/WEB/Admin/FooterController.php
+- app/Http/Controllers/WEB/Admin/ProductController.php
+- app/Http/Controllers/WEB/Admin/SettingController.php
+- resources/views/admin/blog.blade.php
+- resources/views/admin/blog_comment.blade.php
+- resources/views/admin/coupon.blade.php
+- resources/views/admin/pending_product.blade.php
+- resources/views/admin/product.blade.php
+- resources/views/admin/setting.blade.php
+- resources/views/admin/sidebar.blade.php
+- resources/views/admin/stockout_product.blade.php
+- resources/views/admin/website_footer.blade.php
+- app/Http/Controllers/HomeController.php
+- app/Http/Controllers/WEB/Admin/ProductCategoryController.php
+- resources/views/admin/create_product_category.blade.php
+- resources/views/admin/edit_product_category.blade.php
+- resources/views/admin/product_category.blade.php
+- resources/views/admin/sidebar.blade.php
+- routes/web.php
+- 2 column added in the tawk_chats.sql (widget_id, property_id)
+- 7 column added in the settings.sq (empty_cart, empty_wishlist, change_password_image, become_seller_avatar, become_seller_banner, login_image, error_page)
+- 1 column added in the coupons.sql(min_purchase_price)
+- 1 column added in the footers.sql (about_us)
+- 1 column added in categories.sql (image)
+
+
+
+Dashboard a Product Link /Name a click korle kaj kore nah - done 
+CHAT APP ( TwakTO ) Add korte hobe - done
+Announcement modal update issue fixed - done
+Cookie Consent - done
+
+2.checkout coupon provide max price - done
+1.Footer about us article backend - done
+
+Payment On OFF korele FRONT END a aita kaj kore nah
+
+Product QUANTITY (Like ECOSHOP) PRoduct Details page a
+CATEGORY Section In Home Page ( Like ECOSHOP )
+Category LIMIT (DROPDOWN a 10 ta show kore) r o besi show korar optin dite hobe
+
+
+
+3.Image content - done
+
+
+
+new files 
+
+1. tawk_chats.sql
+2. coupons.sql new col(min_purchase_price)
+
+3. footers.sql new col (about_us)
+
+
+
+Date : 11-03-2022
+
+change files:
+
+1. sslcommerz_payments.sql
+2. app\Http\Controllers\WEB\Admin\PaymentMethodController.php
+3. app\Http\Controllers\WEB\Admin\CustomerController.php
+4. app\Http\Controllers\WEB\Admin\OrderController.php
+5. routes\web.php
+6. app\Http\Controllers\User\CheckoutController.php
+7. resources\views\admin\payment_method.blade.php
+
+
+
+sliders, advertisement sql file new column added (product_slug)
