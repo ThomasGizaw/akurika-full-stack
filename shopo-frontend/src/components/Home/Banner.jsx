@@ -266,30 +266,43 @@ export default function Banner({
             </div>
             <div
               data-aos="fade-up"
-              className="best-services w-full bg-white flex flex-col space-y-10 lg:space-y-0 lg:flex-row lg:justify-between lg:items-center lg:h-[110px] px-10 lg:py-0 py-10"
+              className="best-services w-full bg-white px-2 py-4"
             >
-              {services.map((service) => (
-                <div key={service.id} className="item">
-                  <div className="flex space-x-5 rtl:space-x-reverse items-center">
-                    <div>
-                      <span className="w-10 h-10 text-qyellow">
-                        <FontAwesomeCom
-                          className="w-8 h-8"
-                          icon={service.icon}
-                        />
-                      </span>
-                    </div>
-                    <div>
-                      <p className="text-black text-[15px] font-700 tracking-wide mb-1">
-                        {service.title}
-                      </p>
-                      <p className="text-sm text-qgray line-clamp-1">
-                        {service.description}
-                      </p>
+              <SimpleSlider
+                settings={{
+                  infinite: true,
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                  autoplay: true,
+                  autoplaySpeed: 2500,
+                  arrows: false,
+                  responsive: [
+                    { breakpoint: 1024, settings: { slidesToShow: 3 } },
+                    { breakpoint: 768, settings: { slidesToShow: 2 } },
+                    { breakpoint: 480, settings: { slidesToShow: 1 } },
+                  ],
+                }}
+              >
+                {services.map((service) => (
+                  <div key={service.id} className="item px-2">
+                    <div className="flex space-x-2 rtl:space-x-reverse items-center">
+                      <div>
+                        <span className="w-7 h-7 text-qyellow flex items-center justify-center">
+                          <FontAwesomeCom className="w-5 h-5" icon={service.icon} />
+                        </span>
+                      </div>
+                      <div>
+                        <p className="text-black text-xs font-bold mb-0.5 leading-tight">
+                          {service.title}
+                        </p>
+                        <p className="text-xs text-qgray line-clamp-1 leading-tight">
+                          {service.description}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </SimpleSlider>
             </div>
           </div>
         </div>

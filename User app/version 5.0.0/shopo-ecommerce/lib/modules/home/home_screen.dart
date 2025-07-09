@@ -132,6 +132,37 @@ class _LoadedHomePage extends StatelessWidget {
     return CustomScrollView(
       physics: const ClampingScrollPhysics(),
       slivers: [
+        SliverToBoxAdapter(
+          child: SizedBox(
+            height: 100,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              children: [
+                _FeatureCard(
+                  icon: Icons.local_shipping,
+                  title: 'Free Shipping',
+                  subtitle: 'Free Shipping on Payment',
+                ),
+                _FeatureCard(
+                  icon: Icons.assignment_return,
+                  title: 'Return Policy',
+                  subtitle: '24 Hours Return Policy',
+                ),
+                _FeatureCard(
+                  icon: Icons.verified_user,
+                  title: 'Secure Payment',
+                  subtitle: '100% Secure Payment',
+                ),
+                _FeatureCard(
+                  icon: Icons.support_agent,
+                  title: '24/7 Support',
+                  subtitle: 'Dedicated Support',
+                ),
+              ],
+            ),
+          ),
+        ),
         //const SliverToBoxAdapter(child: SearchField()),
         SliverToBoxAdapter(child: Utils.verticalSpace(30.0)),
         //Slider visibility start
@@ -375,6 +406,44 @@ class _LoadedHomePage extends StatelessWidget {
         //new arrival visibility end
         const SliverToBoxAdapter(child: SizedBox(height: 30)),
       ],
+    );
+  }
+}
+
+class _FeatureCard extends StatelessWidget {
+  final IconData icon;
+  final String title;
+  final String subtitle;
+  const _FeatureCard({required this.icon, required this.title, required this.subtitle});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 160,
+      margin: const EdgeInsets.only(right: 16),
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black12,
+            blurRadius: 4,
+            offset: Offset(0, 2),
+          ),
+        ],
+      ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(icon, size: 32, color: Theme.of(context).primaryColor),
+          const SizedBox(height: 8),
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold)),
+          const SizedBox(height: 4),
+          Text(subtitle, style: const TextStyle(fontSize: 12, color: Colors.grey)),
+        ],
+      ),
     );
   }
 }

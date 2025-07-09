@@ -34,17 +34,21 @@ class HorizontalProductComponent extends StatelessWidget {
               // const SizedBox(height: 10),
               SectionHeader(headerText: category, onTap: onTap),
               Container(
-                height: cardSize,
+                // height: cardSize, // Remove fixed height for grid
                 margin: Utils.only(top: 14.0),
-                child: ListView.separated(
-                  physics: const BouncingScrollPhysics(),
+                child: GridView.builder(
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
                   padding: Utils.symmetric(),
-                  scrollDirection: Axis.horizontal,
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    childAspectRatio: 0.7, // Adjust for card shape
+                    crossAxisSpacing: 16,
+                    mainAxisSpacing: 16,
+                  ),
+                  itemCount: productList.length > 6 ? 6 : productList.length,
                   itemBuilder: (context, index) =>
-                      ProductCard(productModel: productList[index], width: 180),
-                  separatorBuilder: (context, index) =>
-                      const SizedBox(width: 16),
-                  itemCount: productList.length > 5 ? 5 : productList.length,
+                      ProductCard(productModel: productList[index]),
                 ),
               ),
             ],

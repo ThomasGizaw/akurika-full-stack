@@ -656,7 +656,7 @@ export default function AllProductPage({ response, sellerInfo }) {
                       </button>
                     </div>
                     {products && cardViewStyle === "col" && (
-                      <div className="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1  xl:gap-[30px] gap-5 mb-[40px]">
+                      <div className="grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 xl:gap-[30px] gap-2 mb-[40px]">
                         <DataIteration
                           datas={products && products}
                           startLength={0}
@@ -675,7 +675,7 @@ export default function AllProductPage({ response, sellerInfo }) {
                       </div>
                     )}
                     {products && cardViewStyle === "row" && (
-                      <div className="grid lg:grid-cols-2 grid-cols-1 xl:gap-[30px] gap-5 mb-[40px]">
+                      <div className="grid grid-cols-2 lg:grid-cols-2 xl:gap-[30px] gap-2 mb-[40px]">
                         <DataIteration
                           datas={products && products}
                           startLength={0}
@@ -709,7 +709,7 @@ export default function AllProductPage({ response, sellerInfo }) {
                       )}
                     </div>
                     {products && cardViewStyle === "col" && (
-                      <div className="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:gap-[30px] gap-5 mb-[40px]">
+                      <div className="grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 xl:gap-[30px] gap-2 mb-[40px]">
                         <DataIteration
                           datas={products && products}
                           startLength={6}
@@ -728,7 +728,7 @@ export default function AllProductPage({ response, sellerInfo }) {
                       </div>
                     )}
                     {products && cardViewStyle === "row" && (
-                      <div className="grid lg:grid-cols-2 grid-cols-1 xl:gap-[30px] gap-5 mb-[40px]">
+                      <div className="grid grid-cols-2 lg:grid-cols-2 xl:gap-[30px] gap-2 mb-[40px]">
                         <DataIteration
                           datas={products && products}
                           startLength={0}

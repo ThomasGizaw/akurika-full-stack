@@ -1,7 +1,7 @@
 {
-  "name": "shopo",
-  "short_name": "shopo",
-  "description": "shopo progressive web app",
+  "name": "Akuriqa",
+  "short_name": "Akuriqa",
+  "description": "Akuriqa progressive web app",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",

@@ -7,7 +7,7 @@ export default function HomePage({ data }) {
     <>
 
       <PageHead
-        title={`${seoSetting.seo_title}`}
+        title={`Welcome to Akuriqa`}
         metaDes={seoSetting.seo_description}
       />
       <Home homepageData={data} />

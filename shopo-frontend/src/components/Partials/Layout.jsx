@@ -39,7 +39,12 @@ export default function Layout({ children, childrenClasses }) {
         .contactUs()
         .then((res) => {
           if (res.data) {
-            setContact(res.data.contact);
+            // Override contact info here
+            setContact({
+              ...res.data.contact,
+              phone: "+251938285648",
+              email: "contact@akuriqa.com",
+            });
           }
         })
         .catch((err) => {
@@ -62,8 +67,13 @@ export default function Layout({ children, childrenClasses }) {
   };
   useEffect(() => {
     if (!allCurrency) {
+      const currencies =
+        websiteSetup && websiteSetup.payload && websiteSetup.payload.currencies;
+      // Only allow ETB and USD
       setAllCurrency(
-        websiteSetup && websiteSetup.payload && websiteSetup.payload.currencies
+        currencies && currencies.filter(
+          (c) => c.currency_code === "ETB" || c.currency_code === "USD"
+        )
       );
     }
   }, [allCurrency]);

@@ -52,17 +52,13 @@ export default function Middlebar({ className, settings }) {
             <div className="relative">
               <Link href="/" passHref>
                 <a rel="noopener noreferrer">
-                  {settings && (
-                    <Image
-                      width="153"
-                      height="44"
-                      objectFit="scale-down"
-                      src={`${
-                        process.env.NEXT_PUBLIC_BASE_URL + settings.logo
-                      }`}
-                      alt="logo"
-                    />
-                  )}
+                  <Image
+                    width="153"
+                    height="44"
+                    objectFit="scale-down"
+                    src="/assets/images/logo-1.png"
+                    alt="logo"
+                  />
                 </a>
               </Link>
             </div>

@@ -12,14 +12,14 @@ export default function BrandSection({ className, sectionTitle, brands = [] }) {
             </h1>
           </div>
         </div>
-        <div className="grid lg:grid-cols-6 sm:grid-cols-4 grid-cols-2">
+        <div className="flex overflow-x-auto gap-4 sm:grid sm:grid-cols-4 lg:grid-cols-6 hide-scrollbar">
           <DataIteration
             datas={brands}
             startLength={0}
             endLength={brands.length}
           >
-            {({ datas }) => (
-              <div key={datas.id} className="item">
+            {({ datas, index }) => (
+              <div key={datas.id} className="item min-w-[45%] sm:min-w-0 sm:w-full">
                 <Link
                   href={{
                     pathname: "/products",

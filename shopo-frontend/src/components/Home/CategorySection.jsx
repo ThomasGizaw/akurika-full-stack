@@ -18,7 +18,7 @@ function CategorySection({
                     {/*        </h1>*/}
                     {/*    </div>*/}
                     {/*</div>*/}
-                    <div className="w-full grid xl:grid-cols-8 md:grid-cols-4 grid-cols-2 gap-[30px]">
+                    <div className="w-full flex overflow-x-auto gap-[16px] md:grid md:grid-cols-4 xl:grid-cols-8 md:gap-[30px] hide-scrollbar">
                         {categories&&categories.length > 0 &&
                             categories
                                 .slice(0, categories.length > 8 ? 8 : categories.length)
@@ -27,7 +27,7 @@ function CategorySection({
                                         data-aos="fade-left"
                                         data-aos-delay={i + "00"}
                                         key={i}
-                                        className="item w-full cursor-pointer group"
+                                        className="item min-w-[120px] w-[120px] md:w-full cursor-pointer group"
                                     >
                                         <Link
                                             href={{

@@ -256,10 +256,10 @@ export default function ProductCardStyleOne({ datas }) {
   return (
     <div className="main-wrapper-card relative">
       <div
-        className="product-card-one w-full h-[445px] bg-white relative group overflow-hidden"
+        className="product-card-one w-full sm:h-[445px] h-[260px] bg-white relative group overflow-hidden"
         style={{ boxShadow: "0px 15px 64px 0px rgba(0, 0, 0, 0.05)" }}
       >
-        <div className="product-card-img w-full h-[300px] -mt-2">
+        <div className="product-card-img w-full sm:h-[300px] h-[160px] -mt-2">
           <div
             className="w-full h-full relative flex justify-center items-center transform scale-100 group-hover:scale-110 transition duration-300 ease-in-out"
             // style={{
@@ -317,7 +317,7 @@ export default function ProductCardStyleOne({ datas }) {
             {/*)}*/}
           </div>
         </div>
-        <div className="product-card-details px-[30px] pb-[30px] relative pt-2">
+        <div className="product-card-details sm:px-[30px] px-2 sm:pb-[30px] pb-2 relative pt-1">
           {/* add to card button */}
           <div className="absolute w-full h-10 px-[30px] left-0 top-40 group-hover:top-[85px] transition-all duration-300 ease-in-out">
             <button
@@ -368,15 +368,15 @@ export default function ProductCardStyleOne({ datas }) {
             passHref
           >
             <a rel="noopener noreferrer">
-              <p className="title mb-2 text-[15px] font-600 text-qblack leading-[24px] line-clamp-2 hover:text-blue-600 cursor-pointer notranslate">
+              <p className="title mb-1 sm:text-[15px] text-xs font-600 text-qblack leading-[18px] line-clamp-2 hover:text-blue-600 cursor-pointer notranslate">
                 {datas.title}
               </p>
             </a>
           </Link>
-          <p className="price">
+          <p className="price flex items-center space-x-1">
             <span
               suppressHydrationWarning
-              className={`main-price  font-600 text-[18px] ${
+              className={`main-price font-600 sm:text-[18px] text-xs ${
                 offerPrice ? "line-through text-qgray" : "text-qred"
               }`}
             >
@@ -388,7 +388,7 @@ export default function ProductCardStyleOne({ datas }) {
                 <>
                   {isProductInFlashSale && (
                     <span
-                      className={`line-through text-qgray font-500 text-[16px] mr-2`}
+                      className="line-through text-qgray font-500 sm:text-[16px] text-xs mr-1"
                     >
                       <CurrencyConvert price={price} />
                     </span>
@@ -403,7 +403,7 @@ export default function ProductCardStyleOne({ datas }) {
             {offerPrice && (
               <span
                 suppressHydrationWarning
-                className="offer-price text-qred font-600 text-[18px] ml-2"
+                className="offer-price text-qred font-600 sm:text-[18px] text-xs ml-1"
               >
                 <CheckProductIsExistsInFlashSale
                   id={datas.id}

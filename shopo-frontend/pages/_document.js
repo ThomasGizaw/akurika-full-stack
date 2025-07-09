@@ -5,6 +5,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <link rel="icon" href="/assets/images/akurioq-favicon.png" type="image/png" />
           {process.env.NEXT_PWA_STATUS === 1 ||
             (process.env.NEXT_PWA_STATUS === "1" && (
               <link rel="manifest" href="/manifest.json" />

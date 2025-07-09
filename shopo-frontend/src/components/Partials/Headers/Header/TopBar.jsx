@@ -181,25 +181,6 @@ export default function TopBar({
                     {contact && contact.email}
                   </span>
                 </div>
-                {defaultCurrency && allCurrency && (
-                  <div className="currency-select flex space-x-1 items-center notranslate">
-                    <Selectbox
-                      action={handler}
-                      defaultValue={defaultCurrency.currency_code}
-                      className="w-fit"
-                      datas={
-                        allCurrency &&
-                        allCurrency.length > 0 &&
-                        allCurrency.map((item) => ({
-                          ...item,
-                          name: item.currency_code,
-                        }))
-                      }
-                    />
-                    <Arrow className="fill-current qblack" />
-                  </div>
-                )}
-
                 <div className="language-select flex space-x-1 items-center notranslate">
                   <Selectbox
                     action={langChange}

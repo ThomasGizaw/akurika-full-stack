@@ -42,16 +42,23 @@ class HomeAppBar extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               mainAxisSize: MainAxisSize.min,
               children: [
-                // const LocationSelector(),
-                CustomImage(
-                    path: RemoteUrls.imageUrl(logo),
-                    color: whiteColor,
-                    height: 24),
+                // Logo
+                Image.asset(
+                  'assets/images/akurika.png',
+                  height: 32,
+                ),
                 const Spacer(),
-                // const SizedBox(width: 20),
+                // Wishlist Icon
+                IconButton(
+                  icon: const Icon(Icons.favorite_border, color: whiteColor),
+                  onPressed: () {
+                    Navigator.pushNamed(context, RouteNames.wishlistScreen);
+                  },
+                ),
+                // Currency Dropdown (if you want to keep it)
                 const CurrenciesWidget(),
-                // const Spacer(),
                 const SizedBox(width: 20),
+                // Cart Icon
                 InkWell(
                   onTap: () {
                     Navigator.pushNamed(context, RouteNames.cartScreen);

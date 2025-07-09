@@ -75,20 +75,7 @@ export default function Ads() {
             >
               <div>
                 <div className="logo mb-[20px]">
-                  <Link href="/" passHref>
-                    <a>
-                      <Image
-                        width="152"
-                        height="36"
-                        src={`${
-                          logo
-                            ? process.env.NEXT_PUBLIC_BASE_URL + logo
-                            : "/assets/images/logo.svg"
-                        }`}
-                        alt="logo"
-                      />
-                    </a>
-                  </Link>
+                  {/* Logo removed as per user request */}
                 </div>
                 <h1 className="md:text-[30px] text-xl font-bold text-qblack mb-1">
                   {announcment.title}
