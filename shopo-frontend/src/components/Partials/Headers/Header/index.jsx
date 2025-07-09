@@ -61,7 +61,7 @@ export default function Header({
                   layout="fill"
                   objectFit="scale-down"
                   src="/assets/images/logo-1.png"
-                  alt="logo"
+                  alt="akurika"
                 />
               </a>
             </Link>
